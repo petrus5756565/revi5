@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site institucional</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Menu Desktop -->
+    <nav>
+        <a class="nav-item" href="../Home/index.html">
+            <img class="icone-nav" src="../assets/icons/botao-home.png" alt="Home">
+            <p>Home</p>
+        </a>
+        <a class="nav-item" href="../Home/index.html">
+            <img class="icone-nav" src="../assets/icons/botao-home.png" alt="Home">
+            <p>Instituição</p>
+        </a>
+        <a class="nav-item" href="../Home/index.html">
+            <img class="icone-nav" src="../assets/icons/botao-home.png" alt="Home">
+            <p>Produtos</p>
+        </a>
+        <a class="nav-item" href="../Home/index.html">
+            <img class="icone-nav" src="../assets/icons/botao-home.png" alt="Home">
+            <p>Contato</p>
+        </a>
+    </nav>
+
+    <!-- Botão de abrir Menu Mobile -->
+    <div id="wrap-open" class="wrap-open" onclick="abrir()">
+        <img src="../assets/icons/menu.png" alt="menu">
+    </div>
+
+    <!-- Menu Mobile -->
+    <div id="menu-mobile">
+        <img onclick="fechar()" src="../assets/icons/fechar.png" alt="fechar">
+        <a href="">Home</a>
+        <a href="">Instituição</a>
+        <a href="">Produtos</a>
+        <a href="">Contato</a>   
+    </div>
+
+    <!-- Primeira Seção (com o primeiro botão centralizado) -->
+    <section class="s1"> 
+        <div class="wra"> 
+            <button type="button" class="btn">Clique aqui</button>
+             
+        </div>
+    </section>
+
+    <!-- Segunda Seção (com o segundo botão centralizado) --> 
+ <section class="s1"> 
+        <div class="wra"> 
+            
+             <img src="https://www.graogourmet.com/wp-content/uploads/2025/01/Blogpost42_3-3.png" alt="Foto café.">
+               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjhLGB5a5mq3d10uG-7_698l7ffScaVOWTLV5_ZaWmJmdaOMaX0VHLjIw&s=10" alt="Foto café.">
+             
+        </div>
+    </section>
+
+<style>
+/* Estilização da Seção com a foto de café */
+.s2 {
+   
+    background-image: url('');
+    background-size: cover;       
+    background-position: center;   
+    background-repeat: no-repeat; 
+    padding: 100px 0;              
+    width: 100%;
+}
+
+/* Centralização do conteúdo interno */
+.wra {
+    display: flex;
+    justify-content: center;       
+    align-items: center;          
+}
+
+/* Estilo básico para o seu botão se destacar na foto */
+.btn {
+    padding: 12px 30px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #f0f0f0;
+}
+</style>
+
+
+    <!-- Terceira Seção (Exibição do Card do Carro Esportivo) -->
+    <section class="s3">
+        <div class="wra">
+            <div class="card-esportivo">
+                <div class="card-imagem">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSAxgnSPxnHQrEaXuJ45HwgZKOymm03qbITN5IBbu0_c10AoFeAzTQ-frx&s=10" alt="Carro Esportivo">
+                    <span class="tag">Café</span>
+                </div>
+                
+                <div class="card-conteudo">
+                    <h2 class="carro-nome">Seu momento com a  sua xicara</h2>
+                    <p class="carro-descricao">Seu café 2.4</p>
+                    
+                    <div class="card-detalhes">
+                        <div class="detalhe">
+                            <span>10/11/2026.</span>
+                            <strong>2026</strong>
+                        </div>
+                        <div class="detalhe">
+                            <span>Café</span>
+                            <strong>Automático ou manual.</strong>
+                        </div>
+                        <div class="detalhe">
+                            <span>Café mais tomados</span>
+                            <strong>1.200</strong>
+                        </div>
+                    </div>
+
+                    <div class="card-rodape">
+                        <span class="preco">R$ 34,00</span>
+                        <button class="btn-detalhes">Ver Detalhes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
